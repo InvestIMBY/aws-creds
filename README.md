@@ -1,4 +1,19 @@
+# AWS Credential script
+
+The purpose of this script is to populate temporary credentials.
+If there is a .terraform folder, it also attempts to populate terraform
+variables to allow terraform cloud to connect to AWS with the temporary
+credentials.
+
+When .terraform folder exists, the profile is picked based on the .terraform folder.
+Usage:
+
+aws-creds <aws profile>
+
+The aws profile is overridden to whatever .terraform has if it exists.
+
 Note: not compatible with Python 3.8
+
 
 # Install python 3.7.9 (did not work with 3.8)
 
